@@ -40,6 +40,8 @@ The fourth and fifth milestones are where we will implement our ideas and build 
  
 ## Part 5: Risks
 TODO: here we can outline risks involved with scope, time management, incorrect tools, general lack of knowledge on the application of these tools, etc. 
+
+The largest risks that our group will face with this project is the overall scope and time managment. Since we are exploring new technologies, it is easy for our group to scope out a project which we will not be able to accomplish as the complexity is to great or the timeline is to short. We also put ourselves at risk of picking the wrong tools at the offset of the project, agian since we have little expirence with these technologies. Without a large understanding of the domain which we are working in, it is difficult to initally create a structure for the project as well as set up timelines and scope for tasks. 
  
 ## Part 6: Tools Used
 Version Control: GitHub
