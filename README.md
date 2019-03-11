@@ -14,6 +14,10 @@ INSERT TASK BREAKDOWN CHART HERE
 
 ## Part 2: Approach
 TODO: Here we can talk about how we are attempting to tackle this project. This could reference the above section.
+
+The approach our group will be taking for this project is is to break it down into smaller millestones consisting of research, design, development, and testing tasks. Many of the the inital research and design that must be down will require a whole team effort so that everone is on the same page, however, once the inital research phaze is over then we can work on individual tasks. For the coding and testing tasks, each task can be assigned to one or two group members to speed up the development time. Once the final testing has been completed, then we will get together once more as a group and finish the final report which is due. The timeline which we will follow is outlined below. 
+
+Since, for many of the technologies we have limited knowladge of how they work and are implimedted, communication will be critical throughout the project. In order to ensure that communication is maintained throughout, our group will rely heavily on Slack.
  
 ## Part 3: Team Structure
  Team Member | Role
@@ -45,3 +49,5 @@ Automation: Jenkins
 Configuration Management: Puppet
 
 Cloud Platform: Microsoft Azure
+
+Communication: Slack
