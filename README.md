@@ -9,7 +9,7 @@ Jesse Browell - V00873161
 ___
 # Project 2 Outline
 ## Part 1: Project Breakdown
-For this project our group is going to build a proof of concept for a STAC Spec search engine. We want to show how someone might go about searching through a large dataset that conforms to the STAC specification. Our system will be able to search through large volumes of STAC data located on a cloud based service. For the implimentation we are utilizing a varriety of tools (Part 6) in the hopes of convincing the developers building the Earth Observation Platform that they need to use the right tools. We have broken down the project into the following tasks:
+For this project our group is going to build a proof of concept for a STAC Spec search engine. We want to show how someone might go about searching through a large dataset that conforms to the STAC specification. Our system will be able to search through large volumes of STAC data located on a cloud based service. For the implimentation we are utilizing a variety of tools (Part 6) in the hopes of convincing the developers building the Earth Observation Platform that they need to use the right tools. We have broken down the project into the following tasks:
 
 Milestone 1: Create Tool and Dataset Familiarity - March 11th | Milestone 2: Configure Build Process - March 18th | Milestone 3: Generalize STAC use case and search - March 18 | Milestone 4: Build implementation modules Due: March 28 | Milestone 5: Compile Project - March 30
 --- | --- | --- | --- | ---
@@ -21,7 +21,7 @@ Acquire STAC compliant data | | | |
 ## Part 2: Approach
 The approach our group will be taking for this project is is to break it down into smaller millestones consisting of research, design, development, and testing tasks. Many of the the inital research and design that must be down will require a whole team effort so that everone is on the same page, however, once the inital research phaze is over then we can work on individual tasks. For the coding and testing tasks, each task can be assigned to one or two group members to speed up the development time. Once the final testing has been completed, then we will get together once more as a group and finish the final report which is due. The timeline which we will follow is outlined below. 
 
-Since, for many of the technologies we have limited knowladge of how they work and are implimedted, communication will be critical throughout the project. In order to ensure that communication is maintained throughout, our group will rely heavily on Slack.
+Since, for many of the technologies we have limited knowladge of how they work and are implemented, communication will be critical throughout the project. In order to ensure that communication is maintained throughout, our group will rely heavily on Slack.
  
 ## Part 3: Team Structure
  Team Member | Role
