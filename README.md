@@ -1,4 +1,4 @@
-[![Build status](https://travis-ci.org/seng371-2019/travis-lab.svg?master)](https://travis-ci.org/seng371-2019)
+[![Build status](https://travis-ci.org/seng371-2019/Project.svg?master)](https://travis-ci.org/seng371-2019)
 
 ## Team Members:
 ```
