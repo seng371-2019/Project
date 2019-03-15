@@ -1,3 +1,5 @@
+[![Build status](https://travis-ci.org/seng371-2019/travis-lab.svg?master)](https://travis-ci.org/seng371-2019)
+
 ## Team Members:
 ```
 Oliver Lewis - V00877996
