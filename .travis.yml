@@ -1,4 +1,4 @@
-language: 
+language: minimal
 
 before_install:
 
