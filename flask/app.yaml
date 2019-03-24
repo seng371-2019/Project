@@ -10,5 +10,5 @@ libraries:
 
 handlers:
 - url: /
-  script: main.app
+  script: run.app
   
