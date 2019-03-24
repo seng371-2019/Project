@@ -3,7 +3,12 @@ __pycache__/
 *$py.class
 *.pyc
 
+.pytest_cache/
+.coverage
+
 env/
 .env
 
 lib/
+
+.vscode
