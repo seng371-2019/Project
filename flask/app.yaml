@@ -11,4 +11,9 @@ libraries:
 handlers:
 - url: /
   script: run.app
+
+- url: /home
+  script: run.app
   
+- url: /search
+  script: run.app
