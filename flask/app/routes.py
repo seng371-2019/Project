@@ -11,7 +11,7 @@ def home():
 @app.route('/search', methods=['GET', 'POST'])
 def search():
     form = SearchForm()
-    if request.method == 'POST':
+    if form.validate_on_submit():
         flash('Searching  dataset {} between {} and {}'.format(form.dataset.data, form.startdate.data, form.enddate.data))
         return redirect(url_for('home'))
     return render_template('search.html', title='Search',form=form)
