@@ -12,6 +12,29 @@
         {% for error in form.dataset.errors %}
             <span style="color: red;">[{{ error }}]</span>
         {% endfor %}
+
+        <h3>Additional Properties</h3>
+
+        <p>
+            {{ form.minlong.label }}<br>
+            {{ form.minlong(size=32) }}
+        </p>
+
+        <p>
+            {{ form.maxlong.label }}<br>
+            {{ form.maxlong(size=32) }}
+        </p>
+
+        <p>
+            {{ form.minlat.label }}<br>
+            {{ form.minlat(size=32) }}
+        </p>
+
+        <p>
+            {{ form.minlat.label }}<br>
+            {{ form.minlat(size=32) }}
+        </p>
+
         <p>
             {{ form.startdate.label }}<br>
             {{ form.startdate }}
@@ -26,6 +49,35 @@
         {% for error in form.enddate.errors %}
             <span style="color: red;">[{{ error }}]</span>
         {% endfor %}
+
+        <p>
+            {{ form.starttime.label }}<br>
+            {{ form.starttime }}
+        </p>
+        {% for error in form.starttime.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+        <p>
+            {{ form.endtime.label }}<br>
+            {{ form.endtime }}
+        </p>
+        {% for error in form.endtime.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+
+        <p>
+            {{ form.mincloudcover.label }}<br>{{ form.mincloudcover }}
+        </p>
+        {% for error in form.mincloudcover.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+        <p>
+            {{ form.maxcloudcover.label }}<br>{{ form.maxcloudcover }}
+        </p>
+        {% for error in form.maxcloudcover.errors %}
+            <span style="color: red;">[{{ error }}]</span>
+        {% endfor %}
+
         <p>{{ form.submit() }}</p>
     </form>
 {% endblock %}
