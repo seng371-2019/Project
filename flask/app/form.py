@@ -6,9 +6,9 @@ from wtforms.validators import DataRequired, NumberRange, Optional
 from wtforms.fields.html5 import DateField, TimeField
 
 class SearchForm(FlaskForm):
-    default_start_date = date(2000,01,01)
+    default_start_date = date(2000,1,1)
     default_end_date = date.today()
-    default_start_time = time(00,00,01)
+    default_start_time = time(0,0,1)
     default_end_time = time(23,59,59)
 
     dataset = StringField('Dataset', validators=[DataRequired()])
