@@ -2,8 +2,14 @@
 
 {% block content %}
     <h1>Results</h1>
-
-    {% for id in data_id %}
-    {{id}}
-    {% endfor %}
+        <table style="width:100%">
+            <tr>
+                <th>Json ID</th>
+            </tr>
+            {% for id in results %}
+            <tr>
+                <td>{{id}}</td>
+            </tr>
+            {% endfor %}
+        </table>
 {% endblock %}
