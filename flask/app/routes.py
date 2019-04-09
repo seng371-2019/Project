@@ -18,8 +18,8 @@ def maxcloudcover(collection, max):
 	return collection		
 	
 def filter(form):
-	client = pymongo.MongoClient("mongodb+srv://[USERNAME]:[PASSWORD]@testing-jcwfi.mongodb.net/test?retryWrites=true")
-	my_database = client.testing.testjson
+	client = pymongo.MongoClient("mongodb+srv://teamname:teamname@project2-stacdata-osuhm.gcp.mongodb.net/test?retryWrites=true")
+	my_database = client.project_2.stac_data
 	my_collection = my_database
 	list = my_collection.find()
 	my_cursor = []
