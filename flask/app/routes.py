@@ -64,7 +64,7 @@ def mindate(collection, min):
 		collection.remove(i)
 	return collection
 
-#Querying max cloud cover	
+#Querying max date	
 def maxdate(collection, max):
 	toRemove = []
 	for item in collection:
@@ -72,7 +72,63 @@ def maxdate(collection, max):
 			toRemove.append(item)
 	for i in toRemove:
 		collection.remove(i)
-	return collection	
+	return collection
+
+#Querying min longitide	
+def minlong(collection, min):
+	toRemove = []
+	for item in collection:
+		lowest = 180
+		for long in item["geometry"]["coordinates"][0]:
+			if lowest > long[0]:
+				lowest = long[0]
+		if lowest < min:
+			toRemove.append(item)
+	for i in toRemove:
+		collection.remove(i)
+	return collection
+	
+#Querying max longitide	
+def maxlong(collection, max):
+	toRemove = []
+	for item in collection:
+		highest = -180
+		for long in item["geometry"]["coordinates"][0]:
+			if highest < long[0]:
+				highest = long[0]
+		if highest > max:
+			toRemove.append(item)
+	for i in toRemove:
+		collection.remove(i)
+	return collection
+	
+#Querying min latitide	
+def minlat(collection, min):
+	toRemove = []
+	for item in collection:
+		lowest = 180
+		for long in item["geometry"]["coordinates"][0]:
+			if lowest > long[1]:
+				lowest = long[1]
+		if lowest < min:
+			toRemove.append(item)
+	for i in toRemove:
+		collection.remove(i)
+	return collection
+	
+#Querying max latitide	
+def maxlat(collection, max):
+	toRemove = []
+	for item in collection:
+		highest = -180
+		for long in item["geometry"]["coordinates"][0]:
+			if highest < long[1]:
+				highest = long[1]
+		if highest > max:
+			toRemove.append(item)
+	for i in toRemove:
+		collection.remove(i)
+	return collection
 	
 def filter(form):
 	client = pymongo.MongoClient("mongodb+srv://teamname:teamname@project2-stacdata-osuhm.gcp.mongodb.net/test?retryWrites=true")
@@ -82,6 +138,7 @@ def filter(form):
 	my_cursor = []
 	for item in list:
 		my_cursor.append(item)
+		
 	#query all items in the collection
 	my_cursor = mincloudcover(my_cursor, form.mincloudcover.data)
 	my_cursor = maxcloudcover(my_cursor, form.maxcloudcover.data)
@@ -89,6 +146,15 @@ def filter(form):
 	my_cursor = maxtime(my_cursor, form.endtime.data)
 	my_cursor = mindate(my_cursor, form.startdate.data)
 	my_cursor = maxdate(my_cursor, form.enddate.data)
+	if form.minlong.data != None:
+		my_cursor = minlong(my_cursor, form.minlong.data)
+	if form.maxlong.data != None:
+		my_cursor = maxlong(my_cursor, form.maxlong.data)
+	if form.minlat.data != None:
+		my_cursor = minlat(my_cursor, form.minlat.data)
+	if form.maxlat.data != None:
+		my_cursor = maxlat(my_cursor, form.maxlat.data)
+	
 	#return cursor with remaining jsons
 	return my_cursor
 	
