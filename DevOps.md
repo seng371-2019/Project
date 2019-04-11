@@ -19,9 +19,11 @@ In our deep dive into the STAC data format, we found a surprisingly lack of supp
 To this end, we chose to use MongoDB, which allowed us to use a familiar database query structure, but applied to a cloud-based dataset and executed on a serverless platform.
 
 Rather than a conventional database structure as seen below:
+
 ![conventional DB](single.png)
 
 We would be orchestrating a cooperative effort between MongoDB and the Google Cloud, to generate and execute a query. Ideally, our application would make as much of this happen behind-the-scenes as possible, but the time constraints of the project required some degree of compromise as we required the user to interact with both MongoDB and GCP directly, to some degree.
+
 ![cloud architecture](mongo.png)
 
 ## Continuous integration
